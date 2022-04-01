@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script src="/assets/js/main.js" defer></script>
 
 </head>
 
@@ -63,6 +62,25 @@
           <li class="breadcrumb__item">Контакты</li>
         </ul>
       </div>
+      <div class="contacts-box">
+
+        <form id="contacts-form" action="#">
+          <label for="mainFeedback_name">Ваше имя:<span class="mf-control-required">*</span></label>
+          <input type="text" id="mainFeedback_name" name="user_name" class="form-control" value="" required="">
+
+          <div class="contacts-form-group">
+            <label for="mainFeedback_email">Ваш E-mail:<span class="mf-control-required">*</span></label>
+            <input type="text" name="user_email" id="mainFeedback_email" class="form-control" value="" required="">
+          </div>
+
+
+          <div class="contacts-form-group">
+            <label for="mainFeedback_message">Сообщение<span class="mf-control-required">*</span></label>
+            <textarea class="form-control" id="mainFeedback_message" name="MESSAGE" rows="5"></textarea>
+          </div>
+          <button>Отправить</button>
+      </div>
+
 
     </div>
   </section>
