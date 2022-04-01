@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/main.js" defer></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container ">
+            <div class="header-top">
+                <div class="header__text">Москва</div>
+                <div class="header__name">The</div>
+                <div class="header__data">29.03.2022</div>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-bottom__title">PORTFOLIO</h1>
+            </div>
+
+        </div>
+
+    </header>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-top">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="/animation/animation_example.html" class="nav-menu__link">Анимация CSS</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/eventListener/eventListener.html" class="nav-menu__link">Интерфейс</a>
+                    </li>
+
+                    <li class="nav-menu__item">
+                        <a href="/slider/slider.html" class="nav-menu__link">Слайдер</a>
+                    </li>
+
+                    <li class="nav-menu__item">
+                        <a href="/validateForm/validate_form.html" class="nav-menu__link">Валидация форм</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/contacts/" class="nav-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="content">
+        <div class="container">
+            <div class="content-box">
+                <h3 class="content-box__title">Главная</h3>
+                <div class="content-box-slider">
+                    <button onclick="backImg()"> Назад </button>
+                    <div class="slider">
+                        <img id="slider" src="4.jpg" width="400px" height="200px" />
+                    </div>
+
+                    <button onclick="forwImg()"> Вперед </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="child">
+                    <a href="/"> <img src="/assets/img/child-reaching-solid.svg" alt="Footer icon"
+                            class="footer-box__img"></a>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

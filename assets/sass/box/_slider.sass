@@ -1,0 +1,28 @@
+.slider
+
+  width: 400px
+  height: 534px
+  border-radius: 10px
+  border: none
+  margin: 30px auto
+  overflow: hidden
+  &-line
+    position: relative
+    display: flex
+    height: 534px
+    width: 2000px
+    background-color: orange
+    border-radius: 8px
+    left: 0
+    transition: all ease 0.5s
+
+  &-button
+    cursor: pointer
+    &__prew
+      position: absolute
+      top: 300px
+      left: 180px
+    &__next
+      position: absolute
+      top: 300px
+      right: 180px
