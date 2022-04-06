@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/slider.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="container ">
+    <div class="container header-container">
       <div class="header-top">
         <div class="header__text">Москва</div>
         <div class="header__name">The</div>
@@ -62,22 +62,20 @@
           <li class="breadcrumb__item">
             <a href="/" class="breadcrumb__link">Главная</a>
           </li>
-          <li class="breadcrumb__item">Слайдер</li>
+          <li class="breadcrumb__item">Список</li>
         </ul>
       </div>
       <div class="content-box">
-
-        <div class="slider">
-          <div class="slider-line">
-            <img src="/assets/img/slider/1.jpg" alt="Slide image">
-            <img src="/assets/img/slider/2.jpg" alt="Slide image">
-            <img src="/assets/img/slider/3.jpg" alt="Slide image">
-            <img src="/assets/img/slider/4.jpg" alt="Slide image">
-            <img src="/assets/img/slider/5.jpg" alt="Slide image">
-          </div>
+        <div class="content-box-input">
+          <input type="text" name="todo" class="todoInput" placeholder="Введите описание задачи">
+          <button class="button button-todo">Добавить</button>
         </div>
-        <button class="slider-button slider-button__prew">Назад</button>
-        <button class="slider-button slider-button__next">Вперед</button>
+        <div class="content-box-wrapper">
+          <ul class="list">
+
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
