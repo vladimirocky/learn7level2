@@ -6,15 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="main.css">
   <script src="main.js" defer></script>
-  <script src="script.js" defer></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="container ">
+    <div class="container header-container">
       <div class="header-top">
         <div class="header__text">Москва</div>
         <div class="header__name">The</div>
@@ -58,34 +57,29 @@
   </nav>
 
 
-  <section class="exempl">
+  <section class="task">
     <div class="container">
-      <div class="breadcrumb">
-        <ul class="breadcrumb__list">
-          <li class="breadcrumb__item">
-            <a href="/" class="breadcrumb__link">Главная</a>
-          </li>
-          <li class="breadcrumb__item">
-            <a href="/animation/" class="breadcrumb__link">Анимация</a>
-          </li>
-          <li class="breadcrumb__item">
-            Анимация JS
-          </li>
-        </ul>
+      <div class="task-box">
+        <form action="" id="new-task-form">
+          <input type="text" name="new-task-input" id="new-task-input" placeholder="Введите задачу" />
+          <input type="submit" id="new-task-submit" value="Add task">
+        </form>
       </div>
-
-      <div class="container-box">
-        <div class="box"></div>
-        <div class="circle"></div>
-      </div>
-      <div class="button-box">
-        <button class="start">Старт</button>
-        <button class="stop">Стоп</button>
-      </div>
-      <div class="exempl-box">
-      </div>
+      <section class="task-list">
+        <h3>Задачи</h3>
+        <div id="tasks">
+          <div class="task">
+            <input type="text" class="text" value="Задача" readonly>
+          </div>
+          <div class="action">
+            <button class="edit">Изменить</button>
+            <button class="delete">Удалить</button>
+          </div>
+        </div>
+      </section>
     </div>
   </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-box">
@@ -97,6 +91,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>

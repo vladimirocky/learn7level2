@@ -49,16 +49,12 @@ list.addEventListener('contextmenu', function (event) {
   event.preventDefault();
   //console.log(item.todo);
   todoList.forEach(function (item) {
-    if (item.list != event.target.innerHTML) {
+    console.log(todoList);
+    // if (item.todo != event.target.innerHTML) {
 
-      item.important = !item.important;
-      displayMessages();
-      localStorage.setItem('todo', JSON.stringify(todoList));
-    } else {
-      // item.important = !item.important;
-      // displayMessages();
-      // console.log('test');
-      // console.log(item.important);
-    }
+    //   item.important = !item.important;
+    //   displayMessages();
+    //   localStorage.setItem('todo', JSON.stringify(todoList));
+    // }
   });
 });
