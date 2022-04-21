@@ -7,7 +7,7 @@ ol {
 }
 
 body {
-	background: url(Asess/img/background27.png);
+	background-color: #332e38;
 }
 
 img {
@@ -20,5 +20,21 @@ h1 {
 	border: 2px dotted blue;
 	text-align: center;
 	background-color: white;
+}
+
+h2 {
+	color: beige;
+}
+
+h3 {
+	color: aliceblue;
+}
+
+p {
+	color: yellow;
+}
+
+ul {
+	color: green;
 }
 
