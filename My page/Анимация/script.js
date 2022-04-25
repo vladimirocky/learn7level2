@@ -1,4 +1,8 @@
-window.onload = function () {
+const startBtn = document.querySelector('.start');
+const stopBtn = document.querySelector('.stop');
+let timeoutID;
+
+
     // будем использовать переменные чтобы
     // записывать текущее положение круга
         let posX = 0;
@@ -10,9 +14,18 @@ window.onload = function () {
     // получаем доступ к кругу
         let circle = document.getElementById('circle');
     // вызываем нашу функцию каждые 20 миллисекунд
-        setInterval(move, 20);
     // будет перемещать каждые 20
     // миллисекунд наш круг
+    startBtn.addEventListener('click', () => {
+        timeoutID = setInterval(move, 2);
+        console.log('start');
+      });
+      
+      stopBtn.addEventListener('click', () => {
+        clearTimeout(timeoutID);
+        console.log('stop');
+      });
+
         function move() {
             // чтобы определить направление
             // движения курга проверяем
@@ -52,4 +65,3 @@ window.onload = function () {
             circle.style.left = posX + 'px';
             circle.style.top = posY + 'px';
         }
-    }
